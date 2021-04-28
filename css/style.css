@@ -1,0 +1,826 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+}
+
+.container{
+    width: 85%;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/******/
+/*start navbar*/
+nav{
+    background-color: black;
+    height: 70px;
+    color: white;
+    position: fixed;
+    z-index:1;
+    width: 100%;
+
+  
+}
+nav .content .logo{
+   float: left;
+ 
+    text-transform: uppercase;
+    margin-top: 20px; 
+  
+}
+nav .content .logo h2 {
+    color: white;
+    font-size:30px ;
+    display: inline-block;
+}
+nav .content .logo span{
+    color: #ff8b38;
+    font-size:30px ;
+   
+}
+nav .content ul{
+   text-transform: capitalize;
+   font-size: 18px; 
+    float: right;
+}
+nav .content li{
+   margin: 25px;
+   list-style: none;
+   display: inline-block; 
+}
+/*end navbar*/
+/*start header*/
+header{
+    height: 680px;
+}
+header img {
+    width: 100%;
+    height:100%;
+    position: relative;
+}
+ header .overlay{
+    position: absolute;
+    height: 680px;
+    width: 100%;
+    right: 0;
+    background-color: rgba(122, 110, 95, 0.246);
+    top:0;
+    bottom: 0;  
+}
+header .content{
+margin-top: 80px;
+padding-top: 80px;
+}
+header .content .left-side {
+    width: 45%;
+    float: left;
+}
+header .content .left-side .logo{
+ 
+    text-transform: uppercase;
+    
+}
+header .content .left-side .logo h1 {
+    display: inline-block;
+    color: white;
+    font-size: 80px;
+}
+header .content .left-side .logo span{
+    font-size: 80px;
+    color: #ff9b51;
+}
+header .content .left-side .modern{
+    font-size: 31px;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing:2px;
+    margin-top: 10px;
+}
+header .content .left-side .border{
+    background-color:white;
+    height:2px;
+    width: 50px;
+    margin-top: 40px;
+}
+header .content .left-side .paragraph{
+margin-top: 40px;
+color:rgba(255, 255, 255, 0.678);
+font-size: 16px;
+line-height: 1.4;
+}
+header .content .left-side button{
+    margin-top: 40px;
+    padding:10px 30px;
+    border: 2px solid #ccc;
+    background-color: transparent;
+    color: white;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+header .content .right-side{
+    width: 33%;
+    float: right;
+ margin-right: 25px;
+  margin-top: 50px;
+    background-color: white;
+}
+header .content .right-side form{
+    
+  margin: auto;
+
+}
+header .content .right-side input{
+width: 70%;
+padding: 20px;
+display: block;
+border: 1px solid white;
+border-bottom: 1px solid rgba(128, 128, 128, 0.226);
+margin: auto;
+text-transform: capitalize;
+
+} 
+header .content .right-side ::placeholder{
+    color: #d3d3d3;
+}
+header .content .right-side  h4{
+    text-transform: capitalize;
+    background-color: #f5f5f5;
+    font-size: 20px;
+    padding: 21px;
+    width:89%;
+
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+header .content .right-side  h4 span{
+    color:#ff9b51;
+    text-transform: uppercase;
+    font-size: 20px;
+    padding-left: 5px solid #ff9b51;
+    margin-left: 4px;
+    
+}
+header .content .right-side form button{
+    padding: 21px;
+    color: white;
+    background-color:#ff9b51;
+    width: 100%;
+    margin-top: 50px;
+    border: 1px solid #ff9b51;
+    text-transform:capitalize;
+    font-size: 16px;
+
+}
+/*end header*/
+/*start social */
+.social{
+    height: 90px;
+    border:2px solid  rgba(179, 179, 147, 0.37) ;
+}
+ .social .details{
+    float: left;
+    margin-top: 20px;
+    width: 40%;
+}
+.social .details h3{
+    text-transform: capitalize;
+    font-size: 20px;
+}
+.social .details p{
+    font-size: 16px;
+  padding-top: 5px solid #ff9b51;
+    color: #a9aaac;
+    margin-top:5px;
+  
+}
+.social .icons{
+    float: right;
+    margin-top: 10px;    
+}
+.social .icons i{
+    font-size: 40px;
+    margin:20px 25px;
+    color: #ccc;
+}
+
+/*end social */
+/*start tabs*/
+.tab-section{
+    background-color: rgba(136, 136, 136, 0.103);
+    height: 450px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.tab-section .tabs{
+margin-top: 50px;
+
+}
+.tab-section .tabs .main {
+    width: 10%;
+     float: left;
+     color: white;   
+}
+.tab-section .main .tab-one, 
+.tab-section .main .tab-two,
+.tab-section .main .tab-three{
+border: 1px solid #ccc;
+text-transform:uppercase;
+padding: 60px 50px;
+border-radius: 3px;
+position: relative;
+
+}
+
+.tab-section .main .tab-one{
+    background-color: #ff9b51;
+  
+}
+.tab-section .main .tab-two{
+    background-color: #333;
+}
+.tab-section .main .tab-three{
+    background-color: #333;
+
+}
+.tab-section .main .tab-one p ,
+.tab-section .main .tab-two p,
+.tab-section .main .tab-three p{
+    font-size: 14px;
+    letter-spacing: 1px;
+    position: absolute;
+    right: 35px;
+    bottom:50px;
+}
+
+.tab-section .tabs .details{
+    width: 40%;
+    float: left;
+    margin-left: 100px;
+    
+}
+.tab-section .details h3{
+    font-size: 20px;
+    text-transform: capitalize;
+}
+.tab-section .details p{
+    font-size: 16px;
+    padding-top: 30px;
+    color: #a9aaac;
+    line-height: 1.4;
+} 
+.tab-section .details .first{
+    padding-top: 50px;
+}
+
+.tab-section .details button{
+    padding:10px 25px;
+    color: white;
+    background-color: #ff9b51;
+    border: 1px solid #ff9b51; 
+    border-radius: 3px;
+    margin-top: 40px;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+.tab-section .image img{
+    width: 30%;
+    float:left;
+    margin-left: 80px;
+  
+}
+/*end tabs*/
+/* start sublist*/
+.subList{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    
+}
+.subList .image img {
+  width: 40%;
+    float: left;
+    height: 300px;
+    margin-top: 50px;
+}
+.subList .details{
+    width: 40%;
+    float: right;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+ .subList .details .sub h3{
+font-size: 20px;
+letter-spacing: .5px;
+
+}
+.subList .details .sub h3::first-letter{
+    text-transform: capitalize;
+}
+.subList .details .sub .line{
+    width: 60px;
+    height: 2px;
+    background-color: #ff9b51;
+    margin-top: 30px;
+}
+.subList .details .sub  p{
+    font-size: 14px;
+    margin-top: 30px;
+    color:#a9aaac;
+    line-height: 1.4;
+    letter-spacing: .5px;
+}
+.subList .details .icon{
+ margin-top: 30px;
+ position:relative;
+
+}
+.subList .details .icon-form{
+    position: absolute;
+    top:10px;
+    left:0;
+}
+
+.subList .details .icon i{
+    color: #ff9b51;
+    border: 2px solid #ff9b51;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 16px;  
+}
+.subList .details .icon .icon-content{
+    margin-left: 80px;
+}
+.subList .icon h5{
+    display: inline-block;
+    text-transform: capitalize;
+    letter-spacing: .5px;
+    
+}
+.subList .details .icon p{
+    color: #a9aaac;
+    line-height: 1.5;
+    font-size: 14px;
+    letter-spacing: .5px;
+}
+/*end sub list*/
+/* start section picture*/
+.picture{
+    margin-top: 100px;
+    margin-bottom: 100px;
+     background-color: rgba(136, 136, 136, 0.103);
+    height: 350px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    
+}
+.picture .image img{
+  width: 40%;
+    float: right;
+    margin-top: 20px;
+}
+.picture .details{
+    width: 50%;
+float: left;
+}
+.picture .details  h3{
+text-transform: capitalize;
+font-size: 20px;
+letter-spacing: .5px;
+padding-top: 30px;
+
+}
+.picture .details .line{
+    width: 60px;
+    height: 2px;
+    background-color: #ff9b51;
+    margin-top: 30px;
+}
+.picture .details   p{
+    font-size: 16px;
+    margin-top: 30px;
+    color:#a9aaac;
+    line-height: 1.4;
+    letter-spacing: .5px;
+   
+}
+/*end section picture*/
+/* start why us*/
+.why-us{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    height: 450px;
+    text-align: center;
+    
+}
+
+.why-us  .details  .h3{
+text-transform: uppercase;
+font-size: 30px;
+letter-spacing: 1px;
+color: #333;
+
+}
+.why-us  .details .line{
+    width: 60px;
+    height: 2px;
+    background-color: #ff9b51;
+    margin: auto;
+    margin-top: 30px;
+
+}
+.why-us  .details  p{
+    font-size: 16px;
+    margin-top: 30px;
+    color:#a9aaac;
+    line-height: 1.3;
+
+}
+
+.why-us  .content .icon{
+ margin-top: 80px;
+ width: 32.333%;
+ float: left;
+ margin-left: 10px;
+
+}
+
+.why-us  .content .icon i{
+    color: #ff9b51;
+    border: 2px solid #ff9b51;
+    padding: 25px;
+    border-radius: 50%;
+    font-size: 18px;
+    
+}
+
+.why-us .content .icon h5{
+  
+    text-transform: capitalize;
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    
+}
+.why-us .content .icon p{
+    color: #a9aaac;
+    line-height: 1.3;
+    font-size: 16px;
+    margin-top: 30px;
+}
+/*end why us*/
+/*start pricing*/
+/* start why us*/
+.pricing{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    height: 900px;
+   text-align: center;
+   background-color: rgba(204, 204, 204, 0.219);
+    
+}
+
+.pricing .details .h3{
+text-transform: uppercase;
+font-size: 30px;
+letter-spacing: 1px;
+padding-top: 100px;
+color: #333;
+
+}
+.pricing .details .line{
+    width: 60px;
+    height: 2px;
+    background-color: #ff9b51;
+    margin: auto;
+    margin-top: 30px;
+
+}
+.pricing  .details  p{
+    font-size: 16px;
+    margin-top: 30px;
+    color:#a9aaac;
+    line-height: 1.3;
+}
+.pricing .card {
+    width: 30%;
+    border: 1px solid #a9aaac1e;
+    margin-top: 80px;
+    float: left;
+    margin-left: 30px;
+}
+.pricing .card .satrt-card{
+    background-color: #333333;
+    color: white;
+}
+.pricing .card  .satrt-card .hero{
+    text-transform: capitalize;
+    font-size: 20px;
+    letter-spacing: 1px;
+    border-bottom:1px solid white;
+    padding: 20px;
+}
+.pricing .card .satrt-card .price{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 5px solid #ff9b51;
+} 
+
+.pricing .card .satrt-card .price .dolar{
+    font-size: 25px;
+    font-weight: bold;
+}
+.pricing .card .satrt-card .price p{
+    font-size: 60px;
+    display: inline-block;
+    font-weight: bold;
+  
+}
+.pricing .card .satrt-card .free{
+    display: block;
+    padding-top: 20px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+
+}
+.pricing .card  .end-card ul{
+    list-style: none;
+    text-transform: uppercase;
+    color: #a9aaac;
+    letter-spacing: 1px;
+    background-color: white;
+}
+.pricing .card  .end-card ul li{
+    border-bottom: 1px solid #a9aaac28;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+.pricing .card .satrt-card .prof-border{
+    background-color: #ff9b51;
+    height: 35px;
+    text-transform: uppercase;
+    font-size: 14px;
+    
+  }
+  .pricing .card .satrt-card .prof-border p{
+      padding-top: 5px;
+  }
+  .pricing  .bottom-card{
+      margin-top: 120px;
+  }
+/* end pricing */
+
+/* start customers*/
+.customers{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    height: 450px;
+   text-align: center;
+    
+}
+
+.customers  .details .h3{
+text-transform: uppercase;
+font-size: 30px;
+letter-spacing: 1px;
+color: #333;
+
+}
+.customers  .details .line{
+    width: 60px;
+    height: 2px;
+    background-color: #ff9b51;
+    margin: auto;
+    margin-top: 30px;
+
+}
+.customers  .details  p{
+    font-size: 16px;
+    margin-top: 30px;
+    color:#a9aaac;
+    line-height: 1.3;
+  
+}
+.customers  .content  .text-data{
+    position: relative;
+}
+.customers  .content  .text-data::after{
+    content: "";
+    width: 20px;
+    height: 20px;
+   position: absolute;
+    background-color: #f5f5f5;
+    top: 120px;
+    left: 20px;
+    transform: rotate(45deg);
+  
+}
+.customers .content .data{
+ margin-top: 80px;
+ width: 28%;
+ float: left;
+ margin-left: 50px;
+}
+.customers .content .data h5{
+    text-transform: capitalize;
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    
+}
+.customers .content .data .text-data{
+ margin-left: 30px;
+ margin-right: 30px;
+ background-color: #f5f5f5;
+ border: 1px solid #f5f5f5;
+border-radius: 3px;
+}
+.customers .content .data p{
+    color: #a9aaac;
+    line-height: 1.3;
+    font-size: 16px;
+    margin-top: 30px;
+    height: 110px;
+    text-align:left;
+    margin: auto;
+    padding:10px;
+    
+}
+.customers .content .data .image {
+    margin-right: 100px;
+    position: relative;
+}
+
+.customers .content .data .image img{
+    position: absolute;
+    top: 0;
+    left: 10px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+   margin-top: 20px; 
+}
+
+.customers .content .data .image h5{
+    display: inline-block;
+    margin-left: 80px;
+}
+.customers .content .data .image span{
+  color: #a9aaac;
+  margin-left: 100px;
+}
+/*end customers*/
+
+/* start stylish */
+.stylish {
+    height: 350px;
+    position: relative;  
+}
+.stylish img {
+    width: 100%;
+    height:100%;
+
+}
+.stylish .overlay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    right: 0;
+    background-color: rgba(122, 95, 95, 0.534);
+    top:0;   
+}
+.stylish .container {
+margin-top: 80px;
+text-align: center;
+margin-bottom: 80px;
+}
+.stylish .h3{
+    text-transform: uppercase;
+    font-size: 30px;
+    color: white;
+    letter-spacing: 1px;
+}
+
+    .stylish .container .line{
+        width: 60px;
+        height: 2px;
+        background-color: #ff9b51;
+       
+        margin: auto;
+        margin-top: 30px;
+    }
+    .stylish p{ 
+        font-size: 16px;
+        margin-top: 30px;
+        color:#a9aaac;
+        line-height: 1.3;
+       
+    }
+.stylish button{
+    padding:10px 25px;
+    color: white;
+    background-color:transparent;
+    border: 1px solid white; 
+    margin-top: 40px;
+    font-size: 16px;
+    text-transform: capitalize;
+
+}
+/* end stylish */
+/* start contact*/
+.contact{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    height: 450px;
+}
+.contact .details{
+  text-align: center;  
+}
+.contact .details .h3{
+    text-transform: uppercase;
+    font-size: 35px;
+    letter-spacing: 1px;
+    color: #333;
+}
+
+ .contact .details .line{
+        width: 60px;
+        height: 2px;
+        background-color: #ff9b51;
+        margin: auto;
+        margin-top: 30px;
+    }
+    .contact  .details p{ 
+        font-size: 16px;
+        margin-top: 30px;
+        color:#a9aaac;
+        line-height: 1.3;
+       
+    }
+    .contact form{
+        
+        width: 100%;
+        position: relative;
+        margin-top: 60px;
+    
+    }
+    .contact form input{
+       width: 45%;
+        padding: 20px 30px;
+ 
+        border: 1px solid white;
+        border-bottom: 1px solid rgba(128, 128, 128, 0.274);
+        margin: left;
+        }
+      
+        .contact form input::placeholder,textarea::placeholder{
+            text-transform: capitalize;
+            color:#cfcfcf;
+            letter-spacing: .5px;
+        }
+      .contact form textarea{
+       float: right;
+        height: 150px;
+        width: 45%;
+        border: 1px solid white;
+        border-bottom: 1px solid rgba(128, 128, 128, 0.274);
+       position: absolute;
+       top: 20px;
+       right: 0;
+
+    }
+   
+    .contact form  button{
+        padding: 15px;
+        color: white;
+        background-color:#ff9b51;
+        border-radius: 3px;
+        margin: auto;
+        margin-top: 30px;
+        border: 1px solid #ff9b51;
+        text-transform:capitalize;
+        font-size: 16px;
+        margin-top: 50px;
+        margin-left: 40%;
+    }
+
+  
+/* end contact */
+/*start footer*/
+footer{
+    background-color: black;
+    color: rgba(255, 255, 255, 0.644);
+    text-align: center;
+    padding-top: 10px;
+padding-bottom: 10px;
+
+}
+footer .icons i{
+    font-size: 20px;
+    margin: 15px;
+}
+/* end footer */
+/*****/
+.clear{
+clear: both;
+}
